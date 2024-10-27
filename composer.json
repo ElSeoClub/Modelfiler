@@ -1,0 +1,27 @@
+{
+    "name": "elseoclub/modelfiler",
+    "description": "Add files handler to any model",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.0.1",
+    "autoload": {
+        "psr-4": {
+            "Elseoclub\\Modelfiler\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ElSeoClub",
+            "email": "elseoclub@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elseoclub\\Modelfiler\\Providers\\ModelFilerServiceProvider"
+            ]
+        }
+    }
+}
