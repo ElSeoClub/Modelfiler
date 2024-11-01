@@ -15,7 +15,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('extension');
             $table->string('storage')->default('local');
-            $table->string('accept')->nullable();
             $table->string('path');
             $table->timestamps();
         });
