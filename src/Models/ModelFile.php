@@ -4,9 +4,9 @@ namespace Elseoclub\Modelfiler\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use InvalidArgumentException;
 
-class ModelFile extends Model
-{
+class ModelFile extends Model {
     protected $table = 'model_files';
 
     protected $fillable = [
@@ -16,12 +16,11 @@ class ModelFile extends Model
         'name',
         'extension',
         'storage',
-        'accept',
         'path',
     ];
 
-    public function fileable(): MorphTo
-    {
+    public function fileable(): MorphTo {
         return $this->morphTo();
     }
+
 }
