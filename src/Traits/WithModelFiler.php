@@ -143,6 +143,8 @@ trait WithModelFiler {
 
         if ( $required ) {
             $rules[] = 'required';
+        } else {
+            $rules[] = 'nullable';
         }
 
         $rules[] = 'file';
